@@ -12,15 +12,16 @@ using namespace std;
 class Reservation
 {
 private:
-	string data;
-	bool isTow;
-	CustomerProfile customer;
+	string ID;
+	string date;
+	bool isTwo;
 	Flight flight;
 	Cruise cruise;
 	Payment payment;
 	Room room;
 	Graph graph;
 public:
+	string getID();
 	void search(int);
 	void searchP(int, int);
 	void searchS(double);
