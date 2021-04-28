@@ -14,12 +14,13 @@ private:
     bool available;
     double price;
     string type;
-    string number;
+    int number;
 public:
+    Room ( int ad, int ch, bool ava, double p , string t, int n );
     string getType();
     void setType( string t );
-    string getNumber();
-    void setNumber( string t);
+    int getNumber();
+    void setNumber( int N);
     int getAdults();
     void setAdults( int ad);
     int getChildren();
