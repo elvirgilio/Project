@@ -21,7 +21,7 @@ private:
     bool Restaurant;
     bool SPA;
 public:
-    void updateAminities();
+    Aminities( bool p, bool g, bool BF, bool L, bool D, bool Pk, bool wifi, bool GV, bool PV, bool b, bool R, bool s);
     bool getPool();
     bool getGym();
     bool getBreakfast();

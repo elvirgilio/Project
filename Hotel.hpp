@@ -5,7 +5,7 @@
 #include <string>
 #include "Room.hpp"
 #include "Aminities.hpp"
-
+#include <vector>
 using namespace std;
 
 class Hotel
@@ -14,10 +14,10 @@ private:
     string name;
     string address;
     long phone;
-    string email;
+    string Email;
     string inDate;
     string outDate;
-    Room rooms;
+    vector <Room> rooms;
     double priceRange;
     double starRating;
     int ratersNum;
@@ -39,9 +39,12 @@ public:
     int getRatersNum();
     void setPriceRange ( double PR);
     double getPriceRange ();
-    void setStarRange ( double SR);
-    double getStarRange();
-    
-};
+    void setStarRating ( double SR);
+    double getStarRating();
+    void setRooms(int ad, int ch, bool ava, double p , string t, int n);
+    Room* getRooms (int num);
+    void setAminities ( bool p, bool g, bool BF, bool L, bool D, bool Pk, bool wifi, bool GV, bool PV, bool b, bool R, bool s);
+    Aminities getAminities();
+    };
 
 #endif /* Hotel_hpp */

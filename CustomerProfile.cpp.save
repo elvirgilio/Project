@@ -1,0 +1,18 @@
+#include "CustomerProfile.hpp"
+
+using namespace std;
+
+int main()
+{
+	void setName(string name);
+        string getName();
+        void setUserName(string userName);
+        string getUserName();
+        void setAge(int age);
+        int getAge();
+        void setEmail(string email);
+        string getEmail();
+        void setPhone(string phone);
+        string getPhone();
+        void view();
+}

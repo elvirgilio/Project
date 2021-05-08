@@ -17,8 +17,8 @@ private:
 	CustomerProfile Customer_Profile;
 public:
 	void add_res(Reservation r);
-	Reservation *get_res(int i);
-	void cancelRes(int i);
+	Reservation *get_res(string id);
+	void cancelRes(string id);
 };
 #endif
 

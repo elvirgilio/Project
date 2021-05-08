@@ -9,9 +9,10 @@ public:
     Payment();
     Payment(double);
     void pay();
-    void discount();
+    void discount(int NORes);
     double getPayMoney();
     void setPayMoney (double);
+    bool isPaid();
 
 };
 
